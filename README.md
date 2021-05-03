@@ -1,21 +1,30 @@
 # dmenu
 
-# What is dmenu?
+## What is dmenu?
 
 dmenu is a dynamic menu for X, originally designed for dwm. It manages large numbers of user-defined menu items efficiently. It is a very powerful tool that allows you to pipe information into it. This makes dmenu a perfect utility to incorporate into your scripting.
 
-# What is dmenu
+## Why this repository
 
-dmenu-distroube is my personal build of dmenu that is very heavily patched to add more functionality and more customization options. The patches that I used in this build include:
+Well the answer is really simple because I have really customized the hell out of this dmenu I have added many patched to it which let me tell you is not a raelly pleasent experience I have to compile it multiple time. So yes if you don't want to go through that much of troble you can use this.
 
-- dmenu-caseinsensitive -- case insesitive search
-- dmenu-lineheight -- adds a flag (-h) to set the minimum height of dmenu lines
-- dmenu-morecolor -- creates a color option for use the entries adjacent to the selection
-- dmenu-numbers -- shows the number of result / total number
+## How to install dmenu
 
-* Mouse functionality
+Run the following commands
 
-# Available flags
+```bash
+    git clone https://github.com/prinixos/dmenu.git
+    cd dmenu
+    sudo make install
+```
+
+### How to run it
+
+```bash
+    dmenu_run
+```
+
+## Available flags
 
 - [-l lines]
 - [-p prompt]
@@ -32,10 +41,11 @@ dmenu-distroube is my personal build of dmenu that is very heavily patched to ad
 - [-shf color]
 - [-w windowid]
 
-An example: dmenu_run
-
 This launches dmenu_run will automatically run with all my configuration No need to add any flags.
 
-# How to install dmenu
+### The flags I recommend
 
-To install dmenu-prinix1014 on most Linux systems, simply clone this repository, then cd into the cloned directory, and finally run a: sudo make install
+```bash
+    dmenu_run -h 30 -nb "#323A46" -sb "#B14438" -p "Run: "
+```
+
